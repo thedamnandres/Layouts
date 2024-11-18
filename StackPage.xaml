@@ -2,23 +2,49 @@
 
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Layouts.StackPage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Item 1" 
-            FontSize="Large" />
-        
-        <Label 
-            Text="Item 2" 
-            FontSize="Medium" />
-        
-        <Label 
-            Text="Item 3" 
-            FontSize="Small" />
-        
-        <Button 
-            Text="Flex Layout" 
-            Clicked="OnNavigateToFlexPage"/>
-        
-    </VerticalStackLayout>
+             x:Class="Layouts.StackPage"
+             BackgroundColor="#f2afc1">
+    
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="20"
+            Spacing="15">
+            
+            <Label
+                Text="IGOR"
+                FontSize="30"
+                FontAttributes="Bold"
+                HorizontalOptions="Center"
+                TextColor="Black"
+                SemanticProperties.HeadingLevel="Level1" />
+            
+            <Label
+                Text="by Tyler, The Creator"
+                FontSize="20"
+                FontAttributes="Italic"
+                HorizontalOptions="Center"
+                TextColor="Black"
+                SemanticProperties.HeadingLevel="Level2" />
+            
+            <Image
+                Source="igor.jpg"
+                HeightRequest="185"
+                Aspect="AspectFit"/>
+            
+            <Label
+                Text="IGOR es el quinto álbum de estudio del artista Tyler, The Creator, lanzado el 17 de mayo de 2019. Este proyecto es una obra maestra conceptual que narra una historia de amor y desamor, llevándonos a través de las emociones más profundas y complejas asociadas con las relaciones."
+                FontSize="16"
+                TextColor="Black"
+                LineBreakMode="WordWrap" 
+                HorizontalOptions="FillAndExpand"
+                Margin="0,10,0,0"/>
+            
+            <Button 
+                Text="Flex Layout" 
+                TextColor="#F2AFC1"
+                Clicked="OnNavigateToFlexPage"
+                BackgroundColor="Black"/>
+            
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>
