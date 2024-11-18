@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Layouts.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+            <Label
+                Text="LAYOUTS"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+
+            <Label
+                Text="Maded by &#10;Andrés Jiménez"
+                Style="{StaticResource SubHeadline}"
+                SemanticProperties.HeadingLevel="Level2"/>
+
+            <Image
+                Source="dotnet_bot.png"
+                HeightRequest="185"
+                Aspect="AspectFit"
+                SemanticProperties.Description="dot net bot in a race car number eight" />
+            
+            <Button 
+                Text="Grid Layout" 
+                Clicked="OnNavigateToGridPage" />
+            
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
