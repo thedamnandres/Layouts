@@ -3,6 +3,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Layouts.GridPage">
+    
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
@@ -14,25 +15,27 @@
         </Grid.ColumnDefinitions>
 
         <BoxView 
-            Color="Red" 
+            Color="White" 
             Grid.Row="0" 
             Grid.Column="0" />
         
         <BoxView 
-            Color="Green" 
+            Color="#F9DDE3" 
             Grid.Row="0" 
             Grid.Column="1" />
         
         <BoxView 
-            Color="Blue" 
+            Color="#F5BCC8" 
             Grid.Row="1" 
             Grid.Column="0" />
         
         <Button 
             Text=" Stack Layout" 
+            TextColor="Black"
             Grid.Row="1" 
             Grid.Column="1" 
             CornerRadius="0"
+            BackgroundColor="#F2AFC1"
             Clicked="OnNavigateToStackPage" />
         
     </Grid>

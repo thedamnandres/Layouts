@@ -5,11 +5,18 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:Layouts"
     Shell.FlyoutBehavior="Disabled"
+    Shell.BackgroundColor="Black"
+    Shell.ForegroundColor="#F2AFC1"
+    Shell.TitleColor="#F2AFC1"
+    Shell.DisabledColor="Gray"
+    Shell.UnselectedColor="LightGray"
+    Shell.TabBarBackgroundColor="Black"
+    Shell.TabBarForegroundColor="#F2AFC1"
     Title="Layouts">
 
     <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
+        Title="GRID"
+        ContentTemplate="{DataTemplate local:GridPage}"
         Route="MainPage" />
-
+    
 </Shell>
